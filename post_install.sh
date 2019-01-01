@@ -20,7 +20,7 @@ sysrc "nginx_data_dir=$DATA_LOCATION"
 
 # set Nginx config file and data directory location
 Inform "set Nginx config file and data directory location"
-sysrc "nginx_flags=-c $_NGINX_DATA_DIR/nginx.conf -p $_NGINX_DATA_DIR"
+sysrc "nginx_flags=-c $DATA_LOCATION/nginx.conf -p $DATA_LOCATION"
 
 # start the nginx service
 service nginx start
