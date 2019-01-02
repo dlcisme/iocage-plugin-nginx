@@ -10,7 +10,6 @@ mkdir $DATA_LOCATION
 sysrc "nginx_enable=YES"
 
 # set Nginx config file and data directory location
-Inform "set Nginx config file and data directory location"
 sysrc "nginx_flags=-c $DATA_LOCATION/nginx.conf -p $DATA_LOCATION"
 
 # start the nginx service
