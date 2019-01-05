@@ -6,6 +6,9 @@ DATA_LOCATION="/app-data/nginx"
 # create the data location
 mkdir $DATA_LOCATION
 
+# make "nginx" the owner of the data location
+chown -R nginx:nginx $DATA_LOCATION
+
 # enable nginx to start at boot
 sysrc "nginx_enable=YES"
 
