@@ -13,4 +13,4 @@ sysrc "nginx_enable=YES"
 sysrc "nginx_flags=-c $DATA_LOCATION/nginx.conf -p $DATA_LOCATION"
 
 # start the nginx service
-service nginx start
+# service nginx start
