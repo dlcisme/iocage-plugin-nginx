@@ -4,7 +4,7 @@
 DATA_LOCATION="/app-data/nginx"
 
 # create the data location
-mkdir $DATA_LOCATION
+mkdir -p $DATA_LOCATION
 
 # make "nginx" the owner of the data location
 chown -R nginx:nginx $DATA_LOCATION
